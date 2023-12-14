@@ -1,0 +1,62 @@
+[
+  {
+    "arguments": [
+      "/opt/homebrew/bin//gcc-13",
+      "-Wall",
+      "-std=gnu99",
+      "-I./inc",
+      "-c",
+      "-o",
+      "src/errExit.o",
+      "src/errExit.c"
+    ],
+    "directory": "/Users/sam/SlideSistemiOperativi/Human Centered Medical System Engineering/5_IPC_shared_memory_and_message_queue/Exercises/solutions/ese_2",
+    "file": "/Users/sam/SlideSistemiOperativi/Human Centered Medical System Engineering/5_IPC_shared_memory_and_message_queue/Exercises/solutions/ese_2/src/errExit.c",
+    "output": "/Users/sam/SlideSistemiOperativi/Human Centered Medical System Engineering/5_IPC_shared_memory_and_message_queue/Exercises/solutions/ese_2/src/errExit.o"
+  },
+  {
+    "arguments": [
+      "/opt/homebrew/bin//gcc-13",
+      "-Wall",
+      "-std=gnu99",
+      "-I./inc",
+      "-c",
+      "-o",
+      "src/server.o",
+      "src/server.c"
+    ],
+    "directory": "/Users/sam/SlideSistemiOperativi/Human Centered Medical System Engineering/5_IPC_shared_memory_and_message_queue/Exercises/solutions/ese_2",
+    "file": "/Users/sam/SlideSistemiOperativi/Human Centered Medical System Engineering/5_IPC_shared_memory_and_message_queue/Exercises/solutions/ese_2/src/server.c",
+    "output": "/Users/sam/SlideSistemiOperativi/Human Centered Medical System Engineering/5_IPC_shared_memory_and_message_queue/Exercises/solutions/ese_2/src/server.o"
+  },
+  {
+    "arguments": [
+      "/opt/homebrew/bin//gcc-13",
+      "-Wall",
+      "-std=gnu99",
+      "-I./inc",
+      "-c",
+      "-o",
+      "src/order.o",
+      "src/order.c"
+    ],
+    "directory": "/Users/sam/SlideSistemiOperativi/Human Centered Medical System Engineering/5_IPC_shared_memory_and_message_queue/Exercises/solutions/ese_2",
+    "file": "/Users/sam/SlideSistemiOperativi/Human Centered Medical System Engineering/5_IPC_shared_memory_and_message_queue/Exercises/solutions/ese_2/src/order.c",
+    "output": "/Users/sam/SlideSistemiOperativi/Human Centered Medical System Engineering/5_IPC_shared_memory_and_message_queue/Exercises/solutions/ese_2/src/order.o"
+  },
+  {
+    "arguments": [
+      "/opt/homebrew/bin//gcc-13",
+      "-Wall",
+      "-std=gnu99",
+      "-I./inc",
+      "-c",
+      "-o",
+      "src/client.o",
+      "src/client.c"
+    ],
+    "directory": "/Users/sam/SlideSistemiOperativi/Human Centered Medical System Engineering/5_IPC_shared_memory_and_message_queue/Exercises/solutions/ese_2",
+    "file": "/Users/sam/SlideSistemiOperativi/Human Centered Medical System Engineering/5_IPC_shared_memory_and_message_queue/Exercises/solutions/ese_2/src/client.c",
+    "output": "/Users/sam/SlideSistemiOperativi/Human Centered Medical System Engineering/5_IPC_shared_memory_and_message_queue/Exercises/solutions/ese_2/src/client.o"
+  }
+]
