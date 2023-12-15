@@ -44,7 +44,6 @@ int main(int argc, char *argv[]) {
   if (msqid == -1) errExit("msgget failed");
 
   char buffer[10];
-  size_t len;
 
   // crea an order data struct
   struct order order;
@@ -68,8 +67,6 @@ int main(int argc, char *argv[]) {
   // read a description of the order
   printf("Insert a description: ");
   fgets(order.description, sizeof(order.description), stdin);
-  len = strlen(order.description);
-  order.description[len - 1] = '\0';
 
   // read a quantity
   printf("Insert quantity: ");
@@ -79,8 +76,6 @@ int main(int argc, char *argv[]) {
   // read an e-mail
   printf("Insert an e-mail: ");
   fgets(order.email, sizeof(order.email), stdin);
-  len = strlen(order.email);
-  order.email[len - 1] = '\0';
 
   // send the order to the server through the message queue
   printf("Sending the order...\n");

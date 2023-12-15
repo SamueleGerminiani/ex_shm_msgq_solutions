@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
   sigfillset(&mySet);
   // remove SIGTERM from mySet
   sigdelset(&mySet, SIGINT);
-  // blocking all signals but SIGTERM
+  // blocking all signals but SIGINT
   sigprocmask(SIG_SETMASK, &mySet, NULL);
 
   // set the function sigHandler as handler for the signal SIGTERM

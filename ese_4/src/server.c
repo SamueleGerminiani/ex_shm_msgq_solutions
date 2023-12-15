@@ -101,7 +101,7 @@ int main (int argc, char *argv[]) {
     char *buffer = (char *)get_shared_memory(shmidClient, 0);
 
     // copy file into the shared memory
-    printf("<Server> coping a file into the client's shared memory...\n");
+    printf("<Server> coping '%s' into the client's shared memory...\n", request->pathname);
     copy_file(request->pathname, buffer);
 
     // notify that data was stored into client's shared memory
