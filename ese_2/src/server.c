@@ -59,18 +59,18 @@ int main(int argc, char *argv[]) {
   // check functionality
   printf("<Server> sleep...\n");
   sleep(30);
-  // the process sleeps for 30 seconds . Try to send some orders
+  // the process sleeps for 30 seconds. Try to send some orders
   // and check that prime users' orders are always read before
   // normal users' ones
 
   struct order order;
   // endless loop
   while (1) {
-    // read a message from the message queue.
     // type is set equal to -2. Thus, first all messages with type 1 are read.
     // When no message with type 1 is in the queue, then messages with type
     // 2 are read from the queue.
     size_t mSize = sizeof(struct order) - sizeof(long);
+    // read a message from the message queue.
     if (msgrcv(msqid, &order, mSize, -2, 0) == -1) errExit("msgget failed");
 
     // print the order on standard output

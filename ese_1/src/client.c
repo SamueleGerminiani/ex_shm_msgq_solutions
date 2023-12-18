@@ -69,9 +69,15 @@ int main(int argc, char *argv[]) {
   printf("Insert an e-mail: ");
   fgets(order.email, sizeof(order.email), stdin);
 
-  // send the order to the server through the message queue
   printf("Sending the order...\n");
+  /* Warning: the POSIX convention requires to remove the type field (long) from
+   the message. The type field is not lost, instead, it is used by the kernel to
+   store the type of the message. The 'type' field is simply not part of the
+   message content; therefore, we should not include it in the size of the
+   message.
+   */
   size_t mSize = sizeof(struct order) - sizeof(long);
+  // send the order to the server through the message queue
   if (msgsnd(msqid, &order, mSize, 0) == -1) errExit("msgsnd failed");
 
   printf("Done\n");

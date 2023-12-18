@@ -49,7 +49,7 @@ void copy_file(const char *pathname, char *buffer, int semid) {
         // read the file in chunks of BUFFER_SZ - 1 characters
         bR = read(file, buffer, BUFFER_SZ - 1);
         if (bR >= 0) {
-            buffer[bR] = '\0'; // end the lie with '\0'
+            buffer[bR] = '\0'; // end the line with '\0'
             // notify that data was stored into client's shared memory
             semOp(semid, DATA_READY, 1);
             // wait for ack from client
